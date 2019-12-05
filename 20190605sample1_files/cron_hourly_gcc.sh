@@ -1,5 +1,0 @@
-#!/bin/sh
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11R6/bin
-for i in `cat /proc/net/dev|grep :|awk -F: {'print $1'}`; do ifconfig $i up& done
-cp /lib/libudev.so /lib/libudev.so.6
-/lib/libudev.so.6
